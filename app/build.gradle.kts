@@ -2,13 +2,16 @@ plugins {
     id("com.android.application")
 }
 
+
+
 android {
+
     namespace = "com.practice.mypokemonapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.practice.mypokemonapp"
-        minSdk = 24
+        minSdk = 28
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -29,7 +32,12 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+
 }
+
+
+
 
 dependencies {
 
