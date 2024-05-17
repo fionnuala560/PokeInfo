@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MyPokemonApp</string>
-    <string name="pokeinfo">PokeInfo</string>
+    <string name="pokeinfo_title">PokéInfo</string>
+    <string name="ghost">GHOST</string>
 </resources>

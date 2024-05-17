@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,18 +8,78 @@
     android:background="@drawable/background_gradient"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/pokeinfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pokeinfo"
-        android:textAppearance="@style/TitleStyle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.practice.mypokemonapp.StrokeTextView
+            android:id="@+id/strokeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/pokeinfo_title"
+            android:textColor="@color/text_yellow"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.121" />
+
+        <ImageView
+            android:id="@+id/bugImageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="300dp"
+            android:layout_marginBottom="427dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/strokeTextView"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/bug_icon" />
+
+        <ImageView
+            android:id="@+id/darkImageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="427dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bugImageView"
+            app:layout_constraintTop_toBottomOf="@+id/strokeTextView"
+            app:srcCompat="@drawable/dark_icon" />
+
+        <ImageView
+            android:id="@+id/dragonImageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginBottom="427dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/darkImageView"
+            app:layout_constraintTop_toBottomOf="@+id/strokeTextView"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/dragon_icon" />
+
+        <ImageView
+            android:id="@+id/electricImageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="281dp"
+            android:layout_marginBottom="297dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bugImageView"
+            app:srcCompat="@drawable/electric_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
