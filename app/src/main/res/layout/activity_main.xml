@@ -32,7 +32,7 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginTop="57dp"
-            android:layout_marginEnd="300dp"
+            android:layout_marginEnd="280dp"
             android:layout_marginBottom="427dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -73,13 +73,89 @@
             android:id="@+id/electricImageView"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:layout_marginEnd="281dp"
+            android:layout_marginEnd="280dp"
             android:layout_marginBottom="297dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bugImageView"
             app:srcCompat="@drawable/electric_icon" />
+
+        <ImageView
+            android:id="@+id/fairyImageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="297dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/electricImageView"
+            app:layout_constraintTop_toBottomOf="@+id/darkImageView"
+            app:srcCompat="@drawable/fairy_icon" />
+
+        <ImageView
+            android:id="@+id/fightingImageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="297dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fairyImageView"
+            app:layout_constraintTop_toBottomOf="@+id/dragonImageView"
+            app:srcCompat="@drawable/fighting_icon" />
+
+        <ImageView
+            android:id="@+id/fireImageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="167dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/electricImageView"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/fire_icon" />
+
+        <ImageView
+            android:id="@+id/flyingImageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="167dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fireImageView"
+            app:layout_constraintTop_toBottomOf="@+id/fairyImageView"
+            app:srcCompat="@drawable/flying_icon" />
+
+        <ImageView
+            android:id="@+id/ghostImageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="167dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/flyingImageView"
+            app:layout_constraintTop_toBottomOf="@+id/fightingImageView"
+            app:srcCompat="@drawable/ghost_icon" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fireImageView"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/grass_icon" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
